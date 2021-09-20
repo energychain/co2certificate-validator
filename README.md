@@ -1,5 +1,19 @@
 # co2certificate-validator
-Validation Module for automated co2 offset certificate validation
+**Validation Module for automated co2 offset certificate validation**
+
+Use this to digitaly validate co2 certificates as you might get programmatically via services like [CO2Offset on RapidAPI](https://rapidapi.com/stromdao-stromdao-default/api/co2-offset).
+
+## Installation
+```shell
+npm install --save co2certificate-validator
+```
+
+## Usage
+```javascript
+const Validator = require("co2certificate-validator");
+let instance = new Validator();
+console.log('Is Valid?',await v.validation('0x971032fdCD88E71A880b539DEc415D1e48441DAF'));
+```
 
 
 ## Sample certificate
