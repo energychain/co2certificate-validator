@@ -11,8 +11,13 @@ npm install --save co2certificate-validator
 ## Usage
 ```javascript
 const Validator = require("co2certificate-validator");
-let instance = new Validator();
-console.log('Is Valid?',await v.validation('0x971032fdCD88E71A880b539DEc415D1e48441DAF'));
+const certificate = '0x971032fdCD88E71A880b539DEc415D1e48441DAF';
+const app = async function() {
+	let instance = new Validator();
+  const validationResult = await instance.validation(certificate);
+	console.log('Is Valid?', validationResult);
+}
+app();
 ```
 
 
