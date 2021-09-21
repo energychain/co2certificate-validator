@@ -1,5 +1,27 @@
 # co2certificate-validator
-Validation Module for automated co2 offset certificate validation
+**Validation Module for automated co2 offset certificate validation**
+
+[![CO2Offset](https://api.corrently.io/v2.0/ghgmanage/statusimg?host=co2certificate-validator&svg=1)](https://co2offset.io/badge.html?host=co2certificate-validator)
+
+
+Use this to digitaly validate co2 certificates as you might get programmatically via services like [CO2Offset on RapidAPI](https://rapidapi.com/stromdao-stromdao-default/api/co2-offset).
+
+## Installation
+```shell
+npm install --save co2certificate-validator
+```
+
+## Usage
+```javascript
+const Validator = require("co2certificate-validator");
+const certificate = '0x971032fdCD88E71A880b539DEc415D1e48441DAF';
+const app = async function() {
+	let instance = new Validator();
+  const validationResult = await instance.validation(certificate);
+	console.log('Is Valid?', validationResult);
+}
+app();
+```
 
 
 ## Sample certificate

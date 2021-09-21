@@ -1,8 +1,8 @@
 {
   "name": "co2certificate-validator",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "description": "Validation Module for automated audit of co2 offset certificates",
-  "main": "validator.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -24,6 +24,8 @@
   },
   "homepage": "https://github.com/SmartEnergySolutions/co2certificate-validator#readme",
   "dependencies": {
-    "axios": "^0.21.4"
+    "axios": "^0.21.4",
+    "co2certificate-validator": "^0.9.1",
+    "node-persist": "^3.1.0"
   }
 }

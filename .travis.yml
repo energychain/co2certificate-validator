@@ -1,0 +1,8 @@
+language: node_js
+node_js:
+  - "12.13"
+
+deploy:
+  provider: npm
+  email: "thorsten.zoerner@stromdao.de"
+  api_key: "711e16a2-467a-431c-b60c-ae456b6f646b"
