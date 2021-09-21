@@ -1,6 +1,9 @@
 # co2certificate-validator
 **Validation Module for automated co2 offset certificate validation**
 
+[![CO2Offset](https://api.corrently.io/v2.0/ghgmanage/statusimg?host=co2certificate-validator&svg=1)](https://co2offset.io/badge.html?host=co2certificate-validator)
+
+
 Use this to digitaly validate co2 certificates as you might get programmatically via services like [CO2Offset on RapidAPI](https://rapidapi.com/stromdao-stromdao-default/api/co2-offset).
 
 ## Installation
